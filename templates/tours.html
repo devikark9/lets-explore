@@ -1,5 +1,54 @@
 {%extends 'base.html'%}
 {%block title%}Tours{%endblock title%}
 {%block body%}
-This is my body
+<div class="container py-0">
+<div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+      <h1 class="display-4 fw-bold ">Travel and Leisure</h1>
+      <p class="fs-5 text-muted">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
+    </div>
+<div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm ">
+          <div class="card-header py-3 bg-info">
+            <h4 class="my-0 fw-normal ">Diwali offers</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">25% Off</h1>
+              <br>
+             <h2 class="text-info display-7"> <small>Lets explore </small> INDIA</h2>
+              <br>
+              <button type="button" onclick="location.href='/booknow'"class="btn btn-sm btn-outline-success">Book Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3 bg-warning">
+            <h4 class="my-0 fw-normal">Christmas offer</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">15% off</h1>
+                 <br>
+              <h2 class="text-warning display-7"> <small>Lets explore </small>THAILAND</h2>
+                 <br>
+                         <button type="button" onclick="location.href='/booknow'"class="btn btn-sm btn-outline-success">Book Now</button>
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm ">
+          <div class="card-header py-3 text-bg-primary bg-danger border-primary">
+            <h4 class="my-0 fw-normal  ">New year offer</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">29% off</h1>   <br>
+              <h2 class="display-7 text-danger "> <small>Lets explore </small> BALI</h2>
+                        <br> <button type="button" onclick="location.href='/booknow'"class="btn btn-sm btn-outline-success">Book Now</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
 {%endblock body%}
