@@ -34,8 +34,8 @@ def contact(request):
                           date=datetime.today())
         contact.save()
         messages.success(request, 'Your request is recieved.Our team will contact you soon!')
-    # else:
-    #     messages.error(request, 'Something went wrong!!!Please try after some time.')
+    else:
+        messages.error(request, 'Something went wrong!!!Please try after some time.')
 
     return render(request, "contact.html")
 
@@ -43,6 +43,6 @@ def contact(request):
 def tours(request):
     return render(request, "tours.html")
 
-def booknow(request):
-    return render(request,"booknow.html")
 
+def booknow(request):
+    return render(request, "booknow.html")

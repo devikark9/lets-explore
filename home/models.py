@@ -8,4 +8,4 @@ class Contact(models.Model):
     mobile = models.CharField(max_length=12)
     destination = models.CharField(max_length=50)
     message = models.TextField()
-    date = models.DateField()
+    date = models.DateField(auto_now_add=True)
